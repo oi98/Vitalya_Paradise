@@ -6,3 +6,7 @@
 /datum/sprite_accessory/hair/wryn/wry_antennae_default
 	name = "Antennae"
 	icon_state = "antennae"
+
+/datum/sprite_accessory/hair/wryn/wry_antennae_curvy
+	name = "Curvy"
+	icon_state = "curvy"
