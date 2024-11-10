@@ -479,9 +479,9 @@
 
 /obj/item/clothing/mask/gas/clown_hat/sweettooth
 	name = "Sweet Tooth Mask"
-	desc = "It's label says: 'If only all clowns were as sweet as Sweet Tooth, the world would be a much more psychotic place'."
-	icon_state = "Sweettooth_mask"
-	item_state = "Sweettooth_mask"
+	desc = "A serial killer on the streets of Midtown"
+	icon_state = "sweettooth_mask"
+	item_state = "sweettooth_mask"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/clothing/species/unathi/mask.dmi',
 		SPECIES_TAJARAN = 'icons/mob/clothing/species/tajaran/mask.dmi',
