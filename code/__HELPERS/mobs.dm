@@ -56,7 +56,7 @@
 			if(head_organ?.h_style)
 				return head_organ.h_style
 		else
-			return "Antennae"
+			return "Normal antennae"
 
 	for(var/hairstyle in GLOB.hair_styles_public_list)
 		var/datum/sprite_accessory/S = GLOB.hair_styles_public_list[hairstyle]

@@ -70,7 +70,7 @@
 	blood_color = "#FFFF99"
 	blood_species = "Wryn"
 	//Default styles for created mobs.
-	default_hair = "Antennae"
+	default_hair = "Normal antennae"
 
 	age_sheet = list(
 		SPECIES_AGE_MIN = 15,
@@ -99,7 +99,7 @@
 		qdel(node)
 	else
 		var/obj/item/organ/external/head/head_organ = H.get_organ(BODY_ZONE_HEAD)
-		head_organ.h_style = "Antennae"
+		head_organ.h_style = "Normal antennae"
 		H.update_hair()
 
 /* Wryn Sting Action Begin */

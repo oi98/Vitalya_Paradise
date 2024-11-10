@@ -6,8 +6,7 @@
 	icon_state = "antennae"
 	parent_organ_zone = BODY_ZONE_HEAD
 	slot = INTERNAL_ORGAN_HIVENODE
-	var/hair_style = "Antennae"
-
+	var/hair_style = "Normal antennae"
 /obj/item/organ/internal/wryn/hivenode/insert(mob/living/carbon/human/M, special = ORGAN_MANIPULATION_DEFAULT)
 	..()
 	M.add_language(LANGUAGE_WRYN)
