@@ -100,8 +100,9 @@
 		qdel(node)
 	else
 		var/obj/item/organ/external/head/head_organ = H.get_organ(BODY_ZONE_HEAD)
-		head_organ.h_style = "Normal antennae"
-		H.update_hair()
+		if(head_organ.h_style == "Bald")
+			head_organ.h_style = random_hair_style(gender = H.gender, species = H.dna.species.name, H = H) // проверка: лысый - даётся рандомная прическа -
+			H.update_hair()
 
 /* Wryn Sting Action Begin */
 

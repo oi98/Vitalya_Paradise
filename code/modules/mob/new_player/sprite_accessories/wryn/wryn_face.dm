@@ -8,7 +8,7 @@
 	icon_state = "antennae"
 
 /datum/sprite_accessory/hair/wryn/wryn_antennae_curvy
-	name = "Curvy Antennae"
+	name = "Curvy antennae"
 	icon_state = "curvy"
 
 /datum/sprite_accessory/hair/wryn/wryn_antennae_nian
@@ -31,6 +31,6 @@
 	name = "Long antennae"
 	icon_state = "long"
 
-/datum/sprite_accessory/hair/wryn/wry_antennae_Low_long
+/datum/sprite_accessory/hair/wryn/wry_antennae_low_long
 	name = "Low Long antennae"
 	icon_state = "low_long"
