@@ -5,6 +5,7 @@
 	deform = 'icons/mob/human_races/r_wryn.dmi'
 	blacklisted = TRUE
 	tail = "wryntail"
+	eyes = "wryn_eyes_s"
 	punchdamagelow = 0
 	punchdamagehigh = 1
 	speed_mod = 1
