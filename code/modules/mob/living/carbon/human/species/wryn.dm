@@ -72,7 +72,8 @@
 	blood_species = "Wryn"
 	//Default styles for created mobs.
 	default_hair = "Normal antennae"
-
+	default_fhair = "Default mane"
+	default_fhair_colour = "#704300"
 	age_sheet = list(
 		SPECIES_AGE_MIN = 15,
 		SPECIES_AGE_MAX = 55,
