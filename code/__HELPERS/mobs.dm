@@ -56,14 +56,14 @@
 			if(head_organ?.h_style)
 				return head_organ.h_style
 		else
-			for(var/hairstyle in GLOB.hair_styles_public_list)
+			for(var/hairstyle in GLOB.hair_styles_public_list) // cycle for putting hair styles into list
 				var/datum/sprite_accessory/S = GLOB.hair_styles_public_list[hairstyle]
 
 				if(hairstyle != "Bald" && species in S.species_allowed)
 					valid_hairstyles += hairstyle
 			if(valid_hairstyles.len)
 				h_style = pick(valid_hairstyles)
-			return h_style // прически вринов возращаются (не балд)
+			return h_style
 
 
 	for(var/hairstyle in GLOB.hair_styles_public_list)
