@@ -61,7 +61,7 @@
 		TRAIT_NO_SCAN,
 	)
 	clothing_flags = HAS_UNDERWEAR | HAS_UNDERSHIRT | HAS_SOCKS
-	bodyflags = HAS_SKIN_COLOR
+	bodyflags = HAS_SKIN_COLOR | HAS_BODY_ACCESSORY
 
 	dies_at_threshold = TRUE
 
@@ -73,6 +73,7 @@
 	//Default styles for created mobs.
 	default_hair = "Normal antennae"
 	default_fhair = "Default mane"
+	default_bodyacc = "Bee Tail"
 	default_fhair_colour = "#704300"
 	age_sheet = list(
 		SPECIES_AGE_MIN = 15,
