@@ -2,7 +2,7 @@
 /obj/item/organ/internal/wryn/hivenode
 	species_type = /datum/species/wryn
 	name = "antennae"
-	icon = 'icons/mob/human_races/r_wryn.dmi'
+	icon = 'icons/obj/species_organs/wryn.dmi'
 	icon_state = "antennae"
 	parent_organ_zone = BODY_ZONE_HEAD
 	slot = INTERNAL_ORGAN_HIVENODE
@@ -27,7 +27,8 @@
 /obj/item/organ/internal/wryn/glands
 	species_type = /datum/species/wryn
 	name = "wryn wax glands"
-	icon_state = "eggsac"
+	icon = 'icons/obj/species_organs/wryn.dmi'
+	icon_state = "waxsac"
 	parent_organ_zone = BODY_ZONE_PRECISE_MOUTH
 	slot = INTERNAL_ORGAN_WAX_GLANDS
 	var/datum/action/innate/honeycomb/honeycomb = new
