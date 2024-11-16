@@ -3,243 +3,243 @@
 */
 
 /datum/sprite_accessory/hair/short
-	name = "Short Hair"	  // try to capatilize the names please~
+	name = "Короткие Волосы"	  // try to capatilize the names please~
 	icon_state = "short" // you do not need to define _s or _l sub-states, game automatically does this for you a
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/cut
-	name = "Cut Hair"
+	name = "Подстриженные Волосы"
 	icon_state = "cut"
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/long
-	name = "Shoulder-length Hair"
+	name = "Волосы До Плеч"
 	icon_state = "long"
 
 /datum/sprite_accessory/hair/longalt
-	name = "Shoulder-length Hair Alt"
+	name = "Волосы До Плеч Альт."
 	icon_state = "longfringe"
 
 /datum/sprite_accessory/hair/longer
-	name = "Long Hair"
+	name = "Длинные Волосы"
 	icon_state = "vlong"
 
 /datum/sprite_accessory/hair/longeralt
-	name = "Long Hair Alt"
+	name = "Длинные Волосы Альт."
 	icon_state = "vlongfringe"
 
 /datum/sprite_accessory/hair/longest
-	name = "Very Long Hair"
+	name = "Очень Длинные Волосы"
 	icon_state = "longest"
 
 /datum/sprite_accessory/hair/longfringe
-	name = "Long Fringe"
+	name = "Длинный Франж"
 	icon_state = "longfringe"
 
 /datum/sprite_accessory/hair/longestalt
-	name = "Longer Fringe"
+	name = "Удлиненный Франж"
 	icon_state = "vlongfringe"
 
 /datum/sprite_accessory/hair/halfbang
-	name = "Half-banged Hair"
+	name = "Полураспущенные Волосы"
 	icon_state = "halfbang"
 
 /datum/sprite_accessory/hair/halfbangalt
-	name = "Half-banged Hair Alt"
+	name = "Полураспущенные Волосы альт."
 	icon_state = "halfbang_alt"
 
 /datum/sprite_accessory/hair/ponytail1
-	name = "Ponytail male"
+	name = "Мужской Конский Хвост"
 	icon_state = "ponytailm"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/ponytail2
-	name = "Ponytail female"
+	name = "Женский Конский Хвост"
 	icon_state = "ponytailf"
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/ponytail3
-	name = "Ponytail alt"
+	name = "Конский Хвост Альт."
 	icon_state = "ponytail3"
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/sideponytail
-	name = "Side Ponytail"
+	name = "Хвостик Набок"
 	icon_state = "stail"
 	unsuitable_gender = MALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/highponytail
-	name = "High Ponytail"
+	name = "Высокий Хвост"
 	icon_state = "highponytail"
 	unsuitable_gender = MALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/wisp
-	name = "Wisp"
+	name = "Распущенный Хвостик"
 	icon_state = "wisp"
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/parted
-	name = "Parted"
+	name = "Волосы с Пробором"
 	icon_state = "parted"
 
 /datum/sprite_accessory/hair/pompadour
-	name = "Pompadour"
+	name = "«Помпадур»"
 	icon_state = "pompadour"
 	unsuitable_gender = FEMALE
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SLIMEPERSON, SPECIES_UNATHI)
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/quiff
-	name = "Quiff"
+	name = "«Квифф»"
 	icon_state = "quiff"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/bedhead
-	name = "Bedhead"
+	name = "Взъерошенные Волосы"
 	icon_state = "bedhead"
 
 /datum/sprite_accessory/hair/bedhead2
-	name = "Bedhead 2"
+	name = "Взъерошенные Волосы 2"
 	icon_state = "bedhead2"
 
 /datum/sprite_accessory/hair/bedhead3
-	name = "Bedhead 3"
+	name = "Взъерошенные Волосы 3"
 	icon_state = "bedhead3"
 
 /datum/sprite_accessory/hair/beehive
-	name = "Beehive"
+	name = "«Улей»"
 	icon_state = "beehive"
 	unsuitable_gender = MALE
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SLIMEPERSON, SPECIES_UNATHI)
 
 /datum/sprite_accessory/hair/bobcurl
-	name = "Bobcurl"
+	name = "Кудрявые Волосы"
 	icon_state = "bobcurl"
 	unsuitable_gender = MALE
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SLIMEPERSON, SPECIES_UNATHI)
 
 /datum/sprite_accessory/hair/bob
-	name = "Bob"
+	name = "Боб-Каре"
 	icon_state = "bobcut"
 	unsuitable_gender = MALE
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SLIMEPERSON, SPECIES_UNATHI)
 
 /datum/sprite_accessory/hair/bowl
-	name = "Bowl"
+	name = "«Горшок»"
 	icon_state = "bowlcut"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/braid2
-	name = "Long Braid"
+	name = "Длинная Коса"
 	icon_state = "hbraid"
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/braid_hip
-	name = "Hippie Braid"
+	name = "Косичка Хиппи"
 	icon_state = "hipbraid"
 	secondary_theme = "beads"
 
 /datum/sprite_accessory/hair/buzz
-	name = "Buzzcut"
+	name = "Баз кат"
 	icon_state = "buzzcut"
 	unsuitable_gender = FEMALE
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SLIMEPERSON, SPECIES_UNATHI)
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/crew
-	name = "Crewcut"
+	name = "«Ёжик»"
 	icon_state = "crewcut"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/combover
-	name = "Combover"
+	name = "Классический Комбовер"
 	icon_state = "combover"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/devillock
-	name = "Devil Lock"
+	name = "Дьявольские Локоны"
 	icon_state = "devilock"
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/dreadlocks
-	name = "Dreadlocks"
+	name = "Дреды"
 	icon_state = "dreads"
 
 /datum/sprite_accessory/hair/curls
-	name = "Curls"
+	name = "Кудрявые Волосы"
 	icon_state = "curls"
 
 /datum/sprite_accessory/hair/afro
-	name = "Afro"
+	name = "Афро"
 	icon_state = "afro"
 
 /datum/sprite_accessory/hair/afro2
-	name = "Afro 2"
+	name = "Афро 2"
 	icon_state = "afro2"
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/afro_large
-	name = "Big Afro"
+	name = "Пышное Афро"
 	icon_state = "bigafro"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/sergeant
-	name = "Flat Top"
+	name = "«Площадка»"
 	icon_state = "sergeant"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/emo
-	name = "Emo"
+	name = "Эмо"
 	icon_state = "emo"
 
 /datum/sprite_accessory/hair/flow
-	name = "Flow Hair"
+	name = "Текущая Прическа"
 	icon_state = "flow"
 
 /datum/sprite_accessory/hair/feather
-	name = "Feather"
+	name = "Каскад"
 	icon_state = "feather"
 
 /datum/sprite_accessory/hair/hitop
-	name = "Hitop"
+	name = "Кроп"
 	icon_state = "hitop"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/mohawk
-	name = "Mohawk"
+	name = "Ирокез"
 	icon_state = "mohawk"
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SLIMEPERSON, SPECIES_UNATHI)
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/jensen
-	name = "Adam Jensen Hair"
+	name = "«Теннис»"
 	icon_state = "jensen"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/cia
-	name = "CIA"
+	name = "Канадка"
 	icon_state = "cia"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/mulder
-	name = "Mulder"
+	name = "Мальдер"
 	icon_state = "mulder"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/gelled
-	name = "Gelled Back"
+	name = "Уложенные Назад Волосы"
 	icon_state = "gelled"
 	unsuitable_gender = MALE
 	glasses_over = 1
