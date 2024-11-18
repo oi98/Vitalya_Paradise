@@ -7,8 +7,9 @@
 	parent_organ_zone = BODY_ZONE_HEAD
 	slot = INTERNAL_ORGAN_HIVENODE
 	var/hair_style = "Normal antennae"
+
 /obj/item/organ/internal/wryn/hivenode/insert(mob/living/carbon/human/M, special = ORGAN_MANIPULATION_DEFAULT)
-	..() //
+	..()
 	M.add_language(LANGUAGE_WRYN)
 	var/obj/item/organ/external/head/head_organ = M.get_organ(BODY_ZONE_HEAD)
 	head_organ.h_style = random_hair_style(gender = M.gender, species = M.dna.species.name, H = M)
