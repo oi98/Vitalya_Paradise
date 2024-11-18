@@ -485,6 +485,7 @@
 	desc = "Брутальная маска клоуна. Она до сих пор пахнет цирком. И керосином."
 	icon_state = "sweettooth_mask"
 	item_state = "sweettooth_mask"
+	ru_names = list(NOMINATIVE = "Маска Сладкоежки", GENITIVE = "Маски Сладкоежки", DATIVE = "Маске Сладкоежки", ACCUSATIVE = "Маску Сладкоежки", INSTRUMENTAL = "Маской Сладкоежки", PREPOSITIONAL = "Маске Сладкоежки")
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/clothing/species/unathi/mask.dmi',
 		SPECIES_TAJARAN = 'icons/mob/clothing/species/tajaran/mask.dmi',

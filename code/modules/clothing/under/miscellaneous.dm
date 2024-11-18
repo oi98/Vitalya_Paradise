@@ -797,9 +797,10 @@
 
 /obj/item/clothing/under/sweettooth
 	name = "Sweet Tooth Costume"
-	desc = "Брутальный костюм серийного убийцы с улиц Мидтауна."
+	desc = "Брутально выглядящий костюм, отдалённо смахивающий на клоунский. Такой отлично подошёл бы какому-нибудь серийному убийце."
 	icon_state = "sweettooth_uniform"
 	item_color = "sweettooth_uniform"
+	ru_names = list(NOMINATIVE = "Костюм Сладкоежки", GENITIVE = "Костюма Сладкоежки", DATIVE = "Костюму Сладкоежки", ACCUSATIVE = "Костюм Сладкоежки", INSTRUMENTAL = "Костюмом Сладкоежки", PREPOSITIONAL = "Костюме Сладкоежки")
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/clothing/species/vox/uniform.dmi',
