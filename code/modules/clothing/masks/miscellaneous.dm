@@ -482,7 +482,7 @@
 
 /obj/item/clothing/mask/gas/clown_hat/sweettooth
 	name = "Sweet Tooth Mask"
-	desc = "A serial killer on the streets of Midtown."
+	desc = "Брутальная маска клоуна. Она до сих пор пахнет цирком. И керосином."
 	icon_state = "sweettooth_mask"
 	item_state = "sweettooth_mask"
 	sprite_sheets = list(

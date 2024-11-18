@@ -797,7 +797,7 @@
 
 /obj/item/clothing/under/sweettooth
 	name = "Sweet Tooth Costume"
-	desc = "It's first home was the circus. It's second was a state institute. It's next home will be yours."
+	desc = "Брутальный костюм серийного убийцы с улиц Мидтауна."
 	icon_state = "sweettooth_uniform"
 	item_color = "sweettooth_uniform"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
