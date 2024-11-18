@@ -416,148 +416,148 @@
 	icon_state = "hightight"
 
 /datum/sprite_accessory/hair/partfade
-	name = "Parted Fade"
+	name = "Фейд С Пробором"
 	icon_state = "shavedpart"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/undercut3
-	name = "Undercut Swept Left"
+	name = "Андеркат с Зачесом Влево"
 	icon_state = "undercut3"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/undercut2
-	name = "Undercut Swept Right"
+	name = "Андеркат с Зачесом Вправо"
 	icon_state = "undercut2"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/undercut1
-	name = "Undercut"
+	name = "Андеркат"
 	icon_state = "undercut1"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/coffeehouse
-	name = "Coffee House Cut"
+	name = "Андеркат ежик"
 	icon_state = "coffeehouse"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/tightbun
-	name = "Tight Bun"
+	name = "Тугой Пучок"
 	icon_state = "tightbun"
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/trimmed
-	name = "Trimmed"
+	name = "Стриженные Волосы"
 	icon_state = "trimmed"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/trimflat
-	name = "Trimmed Flat Top"
+	name = "Укороченная Площадка"
 	icon_state = "trimflat"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/nofade
-	name = "Regulation Cut"
+	name = "Короткая"
 	icon_state = "nofade"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/baldfade
-	name = "Balding Fade"
+	name = "Лысеющие Волосы"
 	icon_state = "baldfade"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/highfade
-	name = "High Fade"
+	name = "Хай-Фейд"
 	icon_state = "highfade"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/medfade
-	name = "Medium Fade"
+	name = "Мидл Фейд"
 	icon_state = "medfade"
 
 /datum/sprite_accessory/hair/lowfade
-	name = "Low Fade"
+	name = "Низкий Фейд"
 	icon_state = "lowfade"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/oxton
-	name = "Oxton"
+	name = "Окстон"
 	icon_state = "oxton"
 
 /datum/sprite_accessory/hair/doublebun
-	name = "Double-Bun"
+	name = "Двойной Пучок"
 	icon_state = "doublebun"
 
 /datum/sprite_accessory/hair/halfshaved
-	name = "Half-Shaved Emo"
+	name = "Бритые виски"
 	icon_state = "halfshaved"
 
 /datum/sprite_accessory/hair/shortbangs
-	name = "Short Bangs"
+	name = "Короткая Чёлка"
 	icon_state = "shortbangs"
 
 /datum/sprite_accessory/hair/longeralt2
-	name = "Long Hair Alt 2"
+	name = "Длинные Волосы Альт. 2"
 	icon_state = "longeralt2"
 
 /datum/sprite_accessory/hair/nia
-	name = "Nia"
+	name = "Длинные Лохматые Волосы"
 	icon_state = "nia"
 
 /datum/sprite_accessory/hair/eighties
-	name = "80's"
+	name = "80-е"
 	icon_state = "80s"
 
 /datum/sprite_accessory/hair/volaju
-	name = "Volaju"
+	name = "Волайу"
 	icon_state = "volaju"
 
 /datum/sprite_accessory/hair/joestar
-	name = "Joestar"
+	name = "Джостар"
 	icon_state = "joestar"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/nitori
-	name = "Nitori"
+	name = "Нитори"
 	icon_state = "nitori"
 
 /datum/sprite_accessory/hair/scully
-	name = "Scully"
+	name = "Скалли"
 	icon_state = "scully"
 
 /datum/sprite_accessory/hair/vegeta
-	name = "Vegeta"
+	name = "Веджета"
 	icon_state = "toriyama2"
 
 /datum/sprite_accessory/hair/crono
-	name = "Chrono"
+	name = "Хроно"
 	icon_state = "toriyama"
 
 /datum/sprite_accessory/hair/poofy2
-	name = "Poofy2"
+	name = "Лохматые Волосы 2"
 	icon_state = "poofy2"
 
 /datum/sprite_accessory/hair/poofy
-	name = "Poofy"
+	name = "Лохматые Волосы"
 	icon_state = "poofy"
 
 /datum/sprite_accessory/hair/dandypomp
-	name = "Dandy Pompadour"
+	name = "Помпадур Денди"
 	icon_state = "dandypompadour"
 
 /datum/sprite_accessory/hair/fringetail
-	name = "Fringetail"
+	name = "Хвостик с Бахромой"
 	icon_state = "fringetail"
 
 /datum/sprite_accessory/hair/mahdrills
-	name = "Drillruru"
+	name = "Дриллруру"
 	icon_state = "drillruru"
 
 /datum/sprite_accessory/hair/familyman
-	name = "The Family Man"
+	name = "Семьянин"
 	icon_state = "thefamilyman"
 
 /datum/sprite_accessory/hair/grandebraid
-	name = "Grande Braid"
+	name = "Величественная Коса"
 	icon_state = "grande"
 
 /datum/sprite_accessory/hair/fringeemo
