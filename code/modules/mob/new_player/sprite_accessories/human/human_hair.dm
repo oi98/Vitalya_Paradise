@@ -86,14 +86,14 @@
 	icon_state = "parted"
 
 /datum/sprite_accessory/hair/pompadour
-	name = "«Помпадур»"
+	name = "Помпадур"
 	icon_state = "pompadour"
 	unsuitable_gender = FEMALE
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SLIMEPERSON, SPECIES_UNATHI)
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/quiff
-	name = "«Квифф»"
+	name = "Квифф"
 	icon_state = "quiff"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
@@ -111,7 +111,7 @@
 	icon_state = "bedhead3"
 
 /datum/sprite_accessory/hair/beehive
-	name = "«Улей»"
+	name = "Улей"
 	icon_state = "beehive"
 	unsuitable_gender = MALE
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SLIMEPERSON, SPECIES_UNATHI)
@@ -129,7 +129,7 @@
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SLIMEPERSON, SPECIES_UNATHI)
 
 /datum/sprite_accessory/hair/bowl
-	name = "«Горшок»"
+	name = "Горшок"
 	icon_state = "bowlcut"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
@@ -152,7 +152,7 @@
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/crew
-	name = "«Ёжик»"
+	name = "Ёжик"
 	icon_state = "crewcut"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
@@ -191,7 +191,7 @@
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/sergeant
-	name = "«Площадка»"
+	name = "Площадка"
 	icon_state = "sergeant"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
@@ -221,7 +221,7 @@
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/jensen
-	name = "«Теннис»"
+	name = "Теннис"
 	icon_state = "jensen"
 	unsuitable_gender = FEMALE
 	glasses_over = 1
@@ -250,60 +250,60 @@
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/spiky
-	name = "Spiky"
+	name = "Колючая"
 	icon_state = "spikey"
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SLIMEPERSON, SPECIES_UNATHI)
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/kusanagi
-	name = "Kusanagi Hair"
+	name = "Кусанаги"
 	icon_state = "kusanagi"
 
 /datum/sprite_accessory/hair/kagami
-	name = "Pigtails"
+	name = "Поросячьи Хвостики"
 	icon_state = "kagami"
 	unsuitable_gender = MALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/himecut
-	name = "Hime Cut"
+	name = "Химэ Като"
 	icon_state = "himecut"
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/braid
-	name = "Floorlength Braid"
+	name = "Коса До Пола"
 	icon_state = "floorbraid"
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/odango
-	name = "Odango"
+	name = "Оданго"
 	icon_state = "odango"
 	unsuitable_gender = MALE
 	glasses_over = TRUE
 
 /datum/sprite_accessory/hair/ombre
-	name = "Ombre"
+	name = "Омбрѐ"
 	icon_state = "ombre"
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/updo
-	name = "Updo"
+	name = "Высокий Пучок"
 	icon_state = "updo"
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/skinhead
-	name = "Skinhead"
+	name = "Бокс"
 	icon_state = "skinhead"
 	glasses_over = TRUE
 
 /datum/sprite_accessory/hair/balding
-	name = "Balding Hair"
+	name = "Облысевшие Волосы"
 	icon_state = "balding"
 	unsuitable_gender = FEMALE // turnoff!
 	glasses_over = TRUE
 
 /datum/sprite_accessory/hair/longemo
-	name = "Long Emo"
+	name = "Длинная Эмо"
 	icon_state = "emolong"
 	unsuitable_gender = MALE
 
@@ -311,36 +311,36 @@
 //////START VG HAIRSTYLES/////
 //////////////////////////////
 /datum/sprite_accessory/hair/birdnest
-	name = "Bird Nest"
+	name = "Гнездо"
 	icon_state = "birdnest"
 
 /datum/sprite_accessory/hair/unkept
-	name = "Unkempt"
+	name = "Неухоженные"
 	icon_state = "unkept"
 
 /datum/sprite_accessory/hair/duelist
-	name = "Duelist"
+	name = "Шипы"
 	icon_state = "duelist"
 	unsuitable_gender = FEMALE
 
 /datum/sprite_accessory/hair/modern
-	name = "Modern"
+	name = "Современная"
 	icon_state = "modern"
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/unshavenmohawk
-	name = "Unshaven Mohawk"
+	name = "Заросший Ирокез"
 	icon_state = "unshavenmohawk"
 	unsuitable_gender = FEMALE
 	glasses_over = TRUE
 
 /datum/sprite_accessory/hair/drills
-	name = "Twincurls"
+	name = "Двойные Завитки"
 	icon_state = "twincurl"
 	unsuitable_gender = MALE
 
 /datum/sprite_accessory/hair/minidrills
-	name = "Twincurls 2"
+	name = "Двойные Завитки 2"
 	icon_state = "twincurl2"
 	unsuitable_gender = MALE
 //////////////////////////////
@@ -352,67 +352,67 @@
 //////////////////////////////////
 
 /datum/sprite_accessory/hair/dave
-	name = "Dave"
+	name = "Дейв"
 	icon_state = "dave"
 
 /datum/sprite_accessory/hair/rosa
-	name = "Rosa"
+	name = "Роза"
 	icon_state = "rosa"
 
 /datum/sprite_accessory/hair/jade
-	name = "Jade"
+	name = "Джейж"
 	icon_state = "jade"
 
 /datum/sprite_accessory/hair/shy
-	name = "Shy"
+	name = "Шай"
 	icon_state = "shy"
 
 /datum/sprite_accessory/hair/manbun
-	name = "Manbun"
+	name = "Мужская Косичка"
 	icon_state = "manbun"
 
 /datum/sprite_accessory/hair/thinningback
-	name = "Thinning Back"
+	name = "Редеющие на Затылке"
 	icon_state = "thinningrear"
 
 /datum/sprite_accessory/hair/thinningfront
-	name = "Thinning Front"
+	name = "Редеющие на Лбу"
 	icon_state = "thinningfront"
 
 /datum/sprite_accessory/hair/thinning
-	name = "Thinning"
+	name = "Редеющие"
 	icon_state = "thinning"
 
 /datum/sprite_accessory/hair/bowlcut2
-	name = "Bowl 2"
+	name = "Горшок 2"
 	icon_state = "bowlcut2"
 
 /datum/sprite_accessory/hair/ronin
-	name = "Ronin"
+	name = "Ронин"
 	icon_state = "ronin"
 
 /datum/sprite_accessory/hair/topknot
-	name = "Topknot"
+	name = "Пучок На Макушке"
 	icon_state = "topknot"
 
 /datum/sprite_accessory/hair/regulationmohawk
-	name = "Regulation Mohawk"
+	name = "Стриженный Ирокез"
 	icon_state = "shavedmohawk"
 
 /datum/sprite_accessory/hair/rowbraid
-	name = "Row Braid"
+	name = "Африканские Косички"
 	icon_state = "rowbraid"
 
 /datum/sprite_accessory/hair/rowdualbraid
-	name = "Row Dual Braid"
+	name = "Двойной Ряд Африканских Косичек"
 	icon_state = "rowdualtail"
 
 /datum/sprite_accessory/hair/rowbun
-	name = "Row Bun"
+	name = "Пучок в Ряд"
 	icon_state = "rowbun"
 
 /datum/sprite_accessory/hair/hightight
-	name = "High and Tight"
+	name = "Классическая Площадка"
 	icon_state = "hightight"
 
 /datum/sprite_accessory/hair/partfade
