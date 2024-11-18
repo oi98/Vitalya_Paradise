@@ -1,4 +1,4 @@
-/datum/species/wryn
+/datum/species/wryn // тут тоже надо
 	name = SPECIES_WRYN
 	name_plural = "Wryn"
 	icobase = 'icons/mob/human_races/r_wryn.dmi'

@@ -1,4 +1,4 @@
-// Internal organs
+// Internal organs // оно надо с
 
 #define INTERNAL_ORGAN_HEART "heart"
 #define INTERNAL_ORGAN_LUNGS "lungs"
@@ -19,6 +19,7 @@
 #define INTERNAL_ORGAN_PLASMAVESSEL "plasmavessel"
 #define INTERNAL_ORGAN_ACIDGLAND "acidgland"
 #define INTERNAL_ORGAN_HIVENODE "hivenode"
+#define INTERNAL_ORGAN_STRING "string"
 #define INTERNAL_ORGAN_NEUROTOXIN_GLAND "neurotoxin_gland"
 #define INTERNAL_ORGAN_RESIN_SPINNER "resin_spinner"
 #define INTERNAL_ORGAN_EGGSAC "eggsac"

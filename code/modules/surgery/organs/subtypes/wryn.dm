@@ -1,4 +1,4 @@
-//WRYN ORGAN
+//WRYN ORGAN // оно тоже надо
 /obj/item/organ/internal/wryn/hivenode
 	species_type = /datum/species/wryn
 	name = "antennae"
