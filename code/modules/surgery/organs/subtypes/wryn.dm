@@ -6,12 +6,20 @@
 	icon_state = "antennae"
 	parent_organ_zone = BODY_ZONE_HEAD
 	slot = INTERNAL_ORGAN_HIVENODE
+	/// Stored hair style, defines only on creation and changes original h_style when inserted
+	var/hair_style
+
+/obj/item/organ/internal/wryn/hivenode/New(mob/living/carbon/human/human)
+	. = ..(human)
+
+	var/obj/item/organ/external/head/head_organ = human.get_organ(BODY_ZONE_HEAD)
+	hair_style = head_organ.h_style
 
 /obj/item/organ/internal/wryn/hivenode/insert(mob/living/carbon/human/M, special = ORGAN_MANIPULATION_DEFAULT)
-	..()
+	. = ..()
 	M.add_language(LANGUAGE_WRYN)
 	var/obj/item/organ/external/head/head_organ = M.get_organ(BODY_ZONE_HEAD)
-	head_organ.h_style = random_hair_style(gender = M.gender, species = M.dna.species.name, H = M)
+	head_organ.h_style = hair_style
 	M.update_hair()
 
 /obj/item/organ/internal/wryn/hivenode/remove(mob/living/carbon/human/M, special = ORGAN_MANIPULATION_DEFAULT)
