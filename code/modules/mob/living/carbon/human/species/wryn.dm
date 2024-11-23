@@ -100,8 +100,6 @@
 		var/obj/item/organ/internal/wryn/hivenode/node = H.get_int_organ(/obj/item/organ/internal/wryn/hivenode)
 		node.remove(H)
 		qdel(node)
-	else
-		var/obj/item/organ/external/head/head_organ = H.get_organ(BODY_ZONE_HEAD)
 
 /* Wryn Sting Action Begin */
 
