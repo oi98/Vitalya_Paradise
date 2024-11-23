@@ -7,15 +7,12 @@
 	parent_organ_zone = BODY_ZONE_HEAD
 	slot = INTERNAL_ORGAN_HIVENODE
 	/// Stored hair style, defines only on creation and changes original h_style when inserted
-	var/hair_style
+	var/hair_style = "Normal antennae"
 
 /obj/item/organ/internal/wryn/hivenode/New(mob/living/carbon/carbon)
 	if(istype(carbon))
 		var/obj/item/organ/external/head/head_organ = carbon.get_organ(BODY_ZONE_HEAD)
 		hair_style = head_organ.h_style
-
-	if(!hair_style)
-		hair_style = "Normal antennae"
 
 	return ..(carbon)
 
