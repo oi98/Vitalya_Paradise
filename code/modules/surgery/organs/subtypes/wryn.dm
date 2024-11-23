@@ -9,11 +9,15 @@
 	/// Stored hair style, defines only on creation and changes original h_style when inserted
 	var/hair_style
 
-/obj/item/organ/internal/wryn/hivenode/New(mob/living/carbon/human/human)
-	. = ..(human)
+/obj/item/organ/internal/wryn/hivenode/New(mob/living/carbon/carbon)
+	if(istype(carbon))
+		var/obj/item/organ/external/head/head_organ = carbon.get_organ(BODY_ZONE_HEAD)
+		hair_style = head_organ.h_style
 
-	var/obj/item/organ/external/head/head_organ = human.get_organ(BODY_ZONE_HEAD)
-	hair_style = head_organ.h_style
+	if(!hair_style)
+		hair_style = "Normal antennae"
+
+	return ..(carbon)
 
 /obj/item/organ/internal/wryn/hivenode/insert(mob/living/carbon/human/M, special = ORGAN_MANIPULATION_DEFAULT)
 	. = ..()
