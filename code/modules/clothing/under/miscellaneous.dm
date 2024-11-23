@@ -808,7 +808,7 @@
 		INSTRUMENTAL = "Костюмом Сладкоежки",
 		PREPOSITIONAL = "Костюме Сладкоежки"
 	)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/clothing/species/vox/uniform.dmi',
 		SPECIES_MONKEY = 'icons/mob/clothing/species/monkey/uniform.dmi',
