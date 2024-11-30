@@ -1,4 +1,4 @@
-/datum/sprite_accessory/facial_hair/wryn_grieve
+/datum/sprite_accessory/facial_hair/wryn
 	icon = 'icons/mob/sprite_accessories/wryn/wryn_facial_hair.dmi'
 	species_allowed = list(SPECIES_WRYN)
 	unsuitable_gender = null
