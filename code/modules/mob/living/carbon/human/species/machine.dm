@@ -137,6 +137,18 @@
 		/mob/living/carbon/human/proc/emote_yes,
 		/mob/living/carbon/human/proc/emote_no))
 
+/datum/species/machine/is_allowed_hair_style(mob/living/carbon/human/human, datum/robolimb/robohead, datum/sprite_accessory/style)
+	. = ..()
+
+	if(!.)
+		return
+
+	if(!robohead.is_monitor || !(style.models_allowed && (robohead.company in style.models_allowed)) && style.models_allowed)
+		return FALSE
+
+	else if(robohead.is_monitor || !(SPECIES_HUMAN in style.species_allowed))
+		return FALSE
+
 // Allows IPC's to change their monitor display
 /datum/action/innate/change_monitor
 	name = "Change Monitor"

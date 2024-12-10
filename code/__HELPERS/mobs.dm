@@ -48,7 +48,7 @@
 
 /proc/random_hair_style(
 	gender, 
-	species = SPECIES_HUMAN, 
+	datum/dna/species/species, 
 	datum/robolimb/robohead = GLOB.all_robolimbs["Morpheus Cyberkinetics"], 
 	mob/living/carbon/human/human
 	)
@@ -58,26 +58,21 @@
 	for(var/hairstyle in GLOB.hair_styles_public_list)
 		var/datum/sprite_accessory/style = GLOB.hair_styles_public_list[hairstyle]
 
-		if(!LAZYIN(style.species_allowed, species))
+		if(!LAZYIN(style.species_allowed, species.name))
 			continue
 
 		if(gender == style.unsuitable_gender)
 			continue
 
-		if(species == SPECIES_MACNINEPERSON)
-			if(robohead.is_monitor && ((style.models_allowed && (robohead.company in style.models_allowed)) || !style.models_allowed))
-				LAZYADD(valid_hairstyles, hairstyle)
+		if(!species.is_allowed_hair_style(human, robohead, style))
+			continue
 
-			else
-				if(!robohead.is_monitor && (SPECIES_HUMAN in style.species_allowed)) // Let use them as wigs
-					LAZYADD(valid_hairstyles, hairstyle)
-					
 		LAZYADD(valid_hairstyles, hairstyle)
 
-	h_style = safepick(valid_hairstyles)
-
 	if(human)
-		SEND_SIGNAL(human, COMSIG_RANDOM_HAIR_STYLE, valid_hairstyles, h_style, robohead)
+		SEND_SIGNAL(human, COMSIG_RANDOM_HAIR_STYLE, valid_hairstyles, robohead)
+
+	h_style = safepick(valid_hairstyles)
 
 	return h_style
 
@@ -665,4 +660,3 @@
 		out_ckey = "(Disconnected)"
 
 	return out_ckey
-
