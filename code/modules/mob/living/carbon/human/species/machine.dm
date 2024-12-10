@@ -137,7 +137,7 @@
 	for(var/hairstyle in GLOB.hair_styles_public_list)
 		var/datum/sprite_accessory/style = GLOB.hair_styles_public_list[hairstyle]
 
-		if(robohead.is_monitor && ((style.models_allowed && (robohead.company in S.models_allowed)) || !style.models_allowed))
+		if(robohead.is_monitor && ((style.models_allowed && (robohead.company in style.models_allowed)) || !style.models_allowed))
 			LAZYADD(valid_hairstyles, hairstyle)
 
 		else
