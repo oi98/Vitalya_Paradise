@@ -46,33 +46,23 @@
 
 	return pick(valid_picks)
 
-/proc/random_hair_style(gender, species = SPECIES_HUMAN, datum/robolimb/robohead, mob/living/carbon/human/H)
+/proc/random_hair_style(gender, species = SPECIES_HUMAN, datum/robolimb/robohead, mob/living/carbon/human/human)
 	var/h_style = "Bald"
 	var/list/valid_hairstyles = list()
 
 	for(var/hairstyle in GLOB.hair_styles_public_list)
-		var/datum/sprite_accessory/S = GLOB.hair_styles_public_list[hairstyle]
+		var/datum/sprite_accessory/style = GLOB.hair_styles_public_list[hairstyle]
 
-		if(hairstyle == "Bald") //Just in case.
-			valid_hairstyles += hairstyle
+		if(!LAZYIN(style.species_allowed, species))
 			continue
-		if(gender == S.unsuitable_gender)
-			continue
-		if(species == SPECIES_MACNINEPERSON) //If the user is a species who can have a robotic head...
-			if(!robohead)
-				robohead = GLOB.all_robolimbs["Morpheus Cyberkinetics"]
-			if((species in S.species_allowed) && robohead.is_monitor && ((S.models_allowed && (robohead.company in S.models_allowed)) || !S.models_allowed)) //If this is a hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
-				valid_hairstyles += hairstyle //Give them their hairstyles if they do.
-			else
-				if(!robohead.is_monitor && (SPECIES_HUMAN in S.species_allowed)) /*If the hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
-																			But if the user has a robotic humanoid head and the hairstyle can fit humans, let them use it as a wig. */
-					valid_hairstyles += hairstyle
-		else //If the user is not a species who can have robotic heads, use the default handling.
-			if(species in S.species_allowed) //If the user's head is of a species the hairstyle allows, add it to the list.
-				valid_hairstyles += hairstyle
 
-	if(valid_hairstyles.len)
-		h_style = pick(valid_hairstyles)
+		if(gender == style.unsuitable_gender)
+			continue
+					
+		LAZYADD(valid_hairstyles, hairstyle)
+
+	h_style = safepick(valid_hairstyles)
+	SEND_SIGNAL(human, COMSIG_RANDOM_HAIR_STYLE, valid_hairstyles, h_style, robohead)
 
 	return h_style
 

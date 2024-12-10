@@ -16,20 +16,22 @@
 
 	return ..(carbon)
 
-/obj/item/organ/internal/wryn/hivenode/insert(mob/living/carbon/human/M, special = ORGAN_MANIPULATION_DEFAULT)
+/obj/item/organ/internal/wryn/hivenode/insert(mob/living/carbon/human/human, special = ORGAN_MANIPULATION_DEFAULT)
 	. = ..()
-	M.add_language(LANGUAGE_WRYN)
-	var/obj/item/organ/external/head/head_organ = M.get_organ(BODY_ZONE_HEAD)
-	head_organ.h_style = hair_style
-	M.update_hair()
+	human.add_language(LANGUAGE_WRYN)
+	var/obj/item/organ/external/head/head_organ = human.get_organ(BODY_ZONE_HEAD)
 
-/obj/item/organ/internal/wryn/hivenode/remove(mob/living/carbon/human/M, special = ORGAN_MANIPULATION_DEFAULT)
-	M.remove_language(LANGUAGE_WRYN)
-	var/obj/item/organ/external/head/head_organ = M.get_organ(BODY_ZONE_HEAD)
+	head_organ.h_style = hair_style
+	human.update_hair()
+
+/obj/item/organ/internal/wryn/hivenode/remove(mob/living/carbon/human/human, special = ORGAN_MANIPULATION_DEFAULT)
+	human.remove_language(LANGUAGE_WRYN)
+	var/obj/item/organ/external/head/head_organ = human.get_organ(BODY_ZONE_HEAD)
 
 	head_organ.h_style = "Bald"
-	M.update_hair()
-	. = ..()
+	human.update_hair()
+
+	return ..()
 
 /obj/item/organ/internal/wryn/glands
 	species_type = /datum/species/wryn
