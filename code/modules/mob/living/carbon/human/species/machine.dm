@@ -121,31 +121,6 @@
 		/mob/living/carbon/human/proc/emote_yes,
 		/mob/living/carbon/human/proc/emote_no))
 
-	RegisterSignal(human, COMSIG_RANDOM_HAIR_STYLE, PROC_REF(handle_random_hairstyle))
-
-/datum/species/machine/proc/handle_random_hairstyle(
-	mob/living/carbon/human/human, 
-	valid_hairstyles, 
-	h_style, 
-	datum/robolimb/robohead
-	)
-	SIGNAL_HANDLER
-
-	if(!robohead)
-		robohead = GLOB.all_robolimbs["Morpheus Cyberkinetics"]
-
-	for(var/hairstyle in GLOB.hair_styles_public_list)
-		var/datum/sprite_accessory/style = GLOB.hair_styles_public_list[hairstyle]
-
-		if(robohead.is_monitor && ((style.models_allowed && (robohead.company in style.models_allowed)) || !style.models_allowed))
-			LAZYADD(valid_hairstyles, hairstyle)
-
-		else
-			if(!robohead.is_monitor && (SPECIES_HUMAN in style.species_allowed)) // Let use them as wigs
-				LAZYADD(valid_hairstyles, hairstyle)
-
-	h_style = safepick(valid_hairstyles)
-
 /datum/species/machine/on_species_loss(mob/living/carbon/human/human)
 	. = ..()
 	var/datum/action/innate/change_monitor/monitor = locate() in human.actions
@@ -161,8 +136,6 @@
 		/mob/living/carbon/human/proc/emote_buzz2,
 		/mob/living/carbon/human/proc/emote_yes,
 		/mob/living/carbon/human/proc/emote_no))
-
-	UnregisterSignal(human, COMSIG_RANDOM_HAIR_STYLE)
 
 // Allows IPC's to change their monitor display
 /datum/action/innate/change_monitor

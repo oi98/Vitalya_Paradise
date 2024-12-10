@@ -46,7 +46,12 @@
 
 	return pick(valid_picks)
 
-/proc/random_hair_style(gender, species = SPECIES_HUMAN, datum/robolimb/robohead, mob/living/carbon/human/human)
+/proc/random_hair_style(
+	gender, 
+	species = SPECIES_HUMAN, 
+	datum/robolimb/robohead = GLOB.all_robolimbs["Morpheus Cyberkinetics"], 
+	mob/living/carbon/human/human
+	)
 	var/h_style = "Bald"
 	var/list/valid_hairstyles = list()
 
@@ -58,11 +63,21 @@
 
 		if(gender == style.unsuitable_gender)
 			continue
+
+		if(species == SPECIES_MACHINEPERSON)
+			if(robohead.is_monitor && ((style.models_allowed && (robohead.company in style.models_allowed)) || !style.models_allowed))
+				LAZYADD(valid_hairstyles, hairstyle)
+
+			else
+				if(!robohead.is_monitor && (SPECIES_HUMAN in style.species_allowed)) // Let use them as wigs
+					LAZYADD(valid_hairstyles, hairstyle)
 					
 		LAZYADD(valid_hairstyles, hairstyle)
 
 	h_style = safepick(valid_hairstyles)
-	SEND_SIGNAL(human, COMSIG_RANDOM_HAIR_STYLE, valid_hairstyles, h_style, robohead)
+
+	if(human)
+		SEND_SIGNAL(human, COMSIG_RANDOM_HAIR_STYLE, valid_hairstyles, h_style, robohead)
 
 	return h_style
 
