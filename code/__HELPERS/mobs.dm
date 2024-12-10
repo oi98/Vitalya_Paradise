@@ -64,7 +64,7 @@
 		if(gender == style.unsuitable_gender)
 			continue
 
-		if(species == SPECIES_MACHINEPERSON)
+		if(species == SPECIES_MACNINEPERSON)
 			if(robohead.is_monitor && ((style.models_allowed && (robohead.company in style.models_allowed)) || !style.models_allowed))
 				LAZYADD(valid_hairstyles, hairstyle)
 
