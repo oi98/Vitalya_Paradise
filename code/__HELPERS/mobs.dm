@@ -48,7 +48,7 @@
 
 /proc/random_hair_style(
 	gender, 
-	datum/dna/species/species, 
+	datum/species/species, 
 	datum/robolimb/robohead = GLOB.all_robolimbs["Morpheus Cyberkinetics"], 
 	mob/living/carbon/human/human
 	)
