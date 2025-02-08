@@ -449,3 +449,4 @@
 		to_chat(user, span_notice("You take the lid off [src]."))
 		container_type &= ~OPENCONTAINER
 	update_icon(UPDATE_OVERLAYS)
+	

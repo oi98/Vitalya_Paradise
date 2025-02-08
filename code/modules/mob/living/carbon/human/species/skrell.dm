@@ -149,5 +149,7 @@
 			update |= H.heal_overall_damage(1, 1, updating_health = FALSE)
 		update |= H.heal_damage_type(1, TOX, updating_health = FALSE)
 		return TRUE
+	if(R.id == "gooberjuice")
+		H.reagents.add_reagent("ethanol",(0.5))
+		return TRUE
 	return ..()
-

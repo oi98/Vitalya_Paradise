@@ -1484,3 +1484,12 @@
 	required_reagents = list("zaza" = 1, "sodawater" = 1)
 	result_amount = 2
 	mix_sound = 'sound/goonstation/misc/drinkfizz.ogg'
+
+/obj/item/chemical_reaction/gooberjuice
+	name = "Сок Губера"
+	id = "gooberjuice"
+	result = "gooberjuice"
+	volume = 80
+	foodtype = SUGAR
+	container_type = NONE
+	list_reagents = list("zaza" = 80)

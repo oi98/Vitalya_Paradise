@@ -40,6 +40,12 @@
 	list_reagents = list("nutriment" = 2, "ice" = 2)
 	foodtype = SUGAR | DAIRY
 
+/obj/item/reagent_containers/food/snacks/icecream/goobericecream
+	name = "Тройной Ягодный Рассвет"
+	desc = "Пломбирное мороженное с ванилью, шоколадом и клубникой."
+	icon_state = "goobericecream"
+	list_reagents = list("nutriment" = 5, "ice" = 2, "chocolate" = 2, "bananajuice" = 6, "berryjuice" = 3, "gooberjuice" = 5)
+	foodtype = SUGAR | DAIRY | FRUIT
 
 //////////////////////
 //		Misc		//
